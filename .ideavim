@@ -1,0 +1,30 @@
+set number
+set relativenumber
+set surround
+set commentary
+set ReplaceWithRegister
+set idearefactormode=keep
+set ideajoin
+
+let mapleader = " "
+
+imap jj <Esc>
+nnoremap <C-k> :m -2<CR>
+nnoremap <C-j> :m +1<CR>
+
+nmap <leader>h :action Back<CR>
+nmap <leader>l :action Forward<CR>
+nmap <leader>/ <action>(ShowErrorDescription)
+nmap <leader>e <action>(GotoNextError)
+nmap <leader>t :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>r :action RenameElement<CR>
+nnoremap <leader>v :action IntroduceVariable<CR>
+nnoremap <leader>n :action Inline<CR>
+nnoremap <leader><leader> :action GotoTest<CR>
+nnoremap <leader>w :action HideAllWindows<CR>
+nnoremap <leader>si :source ~/.ideavimrc<CR>
+
+
+set NERDTree
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapJumpParent='h'
